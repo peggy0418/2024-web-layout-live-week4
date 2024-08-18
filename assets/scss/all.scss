@@ -1,5 +1,29 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "./base/reset"; //sass import
+@import "./variables/variables";
 
+// 1.scss不要包太多層，層級越少越好
+.navbar{
+    background-color: $primary-color;
+    color: white;
+    padding: $padding-s;
 
-@import './pages/index.scss';
+    a{
+        color:white;
+    }
+}
+
+.btn{
+    background-color:$primary-color;
+    display: inline-block;
+}
+.btn:hover{
+    background-color:darken($primary-color,10%);
+    
+}
+// 2.變數
+.footer{
+    background-color: $primary-color;
+    color: white;
+    padding: $padding-s;
+
+}
